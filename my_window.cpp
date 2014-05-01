@@ -24,7 +24,7 @@ void MyWindow::update(){
 void MyWindow::drawPixel(Uint32 x, Uint32 y, Uint32 colour){
     if(x>=w||y>=h)
         return;
-    pixelit[y*w+x]=colour;///jooh, en tiedä miksi, mutta menee noin päin
+    pixelit[y*w+x]=colour;
 }
 
 void MyWindow::clearPixel(Uint32 x, Uint32 y){
