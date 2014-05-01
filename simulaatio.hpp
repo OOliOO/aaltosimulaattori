@@ -31,7 +31,7 @@ public:
 private:
     Uint32 t_viimeks;
     std::unordered_map<int, Jousipallo*> palleroiset;
-    //koordinaatit tunnettu clean code tyyliin yhteen inttiin ettei tartte määritellä hashia itte
+    //koordinaatit tungettu clean code tyyliin yhteen inttiin ettei tartte määritellä hashia itte
     std::stack<int> poistetut;
     bool paused;
 
