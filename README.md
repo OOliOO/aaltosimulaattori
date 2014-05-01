@@ -1,5 +1,5 @@
-Epileptia-Applet--AKA-aaltosimulaattori-
-========================================
+Aaltosimulaattori
+=================
 
 Aaltosimulaattori jonka grafiikat aiheuttavat 95% varmuudella epileptiakohtauksen 50ms altistusajalla.
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––----------------------
@@ -42,5 +42,6 @@ Pysäytettynä tehdyt muutokset (mm. uudet luodut värähtelyalueet/impulssit jn
 
 
 
-HUOMIOITA:
-paskkasti optimoitu, ei kannattane tehdä kovin isoja alueita.
+HUOMIOITAVAA:
+Paskasti optimoitu, ei kannattane tehdä kovin isoja alueita. (Varsinkaan paskalla koneella)
+En vastaa käyttäjän kuolemasta.
