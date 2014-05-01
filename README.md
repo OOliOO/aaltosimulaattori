@@ -43,5 +43,5 @@ Pysäytettynä tehdyt muutokset (mm. uudet luodut värähtelyalueet/impulssit jn
 
 
 HUOMIOITAVAA:
-Paskasti optimoitu, ei kannattane tehdä kovin isoja alueita. (Varsinkaan paskalla koneella)
+Paskasti optimoitu, ei kannattane tehdä kovin isoja alueita (varsinkaan paskalla koneella).
 En vastaa käyttäjän kuolemasta.
