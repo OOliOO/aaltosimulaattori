@@ -40,7 +40,7 @@ Muihin muutostiloihin pääset seuraavasti:
 Lisäksi simulaation voi pysäyttää painamalla 'space'-näppäintä, ja simulaatio jatkuu tätä uudelleen painettaessa.
 Pysäytettynä tehdyt muutokset (mm. uudet luodut värähtelyalueet/impulssit jne.) säilyvät.
 
-Backspace "resettaa" simulaation. Aika siis muuttuu nollaksi ja kaikki aallot kumitetaan. Kuitenki värähtelevät
+Backspace "resettaa" simulaation. Aika siis muuttuu nollaksi ja kaikki aallot kumitetaan. Kuitenkin värähtelevät
 alueet säilyvät.
 
 HUOMIOITAVAA:
