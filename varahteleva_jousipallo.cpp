@@ -3,10 +3,14 @@
 VarahtelevaJousipallo::VarahtelevaJousipallo(double amplitudi, double kulmataajuus){
     A=amplitudi;
     w=kulmataajuus;
-    t=0;
+    reset();
 }
 
 void VarahtelevaJousipallo::paivitaSij(double dt){
     t+=dt;
     z=A*sin(w*t);
+}
+
+void VarahtelevaJousipallo::reset(){
+    t=0;
 }

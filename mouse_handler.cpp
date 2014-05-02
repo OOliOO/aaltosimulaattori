@@ -5,6 +5,7 @@ MouseHandler::MouseHandler(Simulaatio& simulaatio):simulaatio(simulaatio){
     is_running=1;
     mode=0;
     edit_mode=0;
+    m_rect=0;
 }
 
 bool MouseHandler::running(){
@@ -16,6 +17,18 @@ void MouseHandler::update(){
     while(SDL_PollEvent(&event)){
         if(event.type==SDL_QUIT)
             is_running=0;
+        if(event.type==SDL_MOUSEMOTION&&was_down){
+            int x=event.button.x;
+            int y=event.button.y;
+            if(m_rect!=0)
+                delete m_rect;
+            m_rect=new SDL_Rect;
+            m_rect->x=std::min(x0,x);
+            m_rect->y=std::min(y0,y);
+            m_rect->w=std::abs(x0-x)+1;
+            m_rect->h=std::abs(y0-y)+1;
+        }
+
         if(event.type==SDL_MOUSEBUTTONDOWN){
             if(was_down)    //hommat on kesken, älä sinä häiritse saatana
                 continue;
@@ -33,6 +46,9 @@ void MouseHandler::update(){
             if(!was_down)   //emt mix
                 continue;
             if(event.button.button==which){
+                delete m_rect;
+                m_rect=0;
+
                 if(event.button.button==SDL_BUTTON_LEFT){
                     int x=event.button.x;
                     int y=event.button.y;
@@ -110,6 +126,8 @@ void MouseHandler::update(){
                 edit_mode=2;
             if(event.key.keysym.sym==SDLK_SPACE)
                 simulaatio.pause();
+            if(event.key.keysym.sym==SDLK_BACKSPACE)
+                simulaatio.reset();
         }
     }
 }
@@ -121,4 +139,8 @@ void MouseHandler::edit_parameters(int a){
         p_A=a*4;
     if(edit_mode==2)
         w_A=a*2;
+}
+
+const SDL_Rect* MouseHandler::getMouseRect(){
+    return m_rect;
 }

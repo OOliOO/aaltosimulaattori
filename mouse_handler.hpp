@@ -22,9 +22,11 @@ public:
     MouseHandler(Simulaatio& simulaatio);
     void update();
     bool running();
+    const SDL_Rect* getMouseRect();
 private:
     Simulaatio& simulaatio;
     bool was_down;
+    SDL_Rect* m_rect;
     int x0,y0;
     Uint32 which;
     bool is_running;

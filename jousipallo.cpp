@@ -1,7 +1,7 @@
 #include "jousipallo.hpp"
 
 Jousipallo::Jousipallo(){
-    a=v=z=0;
+    reset();
 }
 
 void Jousipallo::paivitaA(Jousipallo *b, double d_taso){
@@ -33,4 +33,8 @@ double Jousipallo::getPoikkeama(){
 
 void Jousipallo::poikkeuta(double pakote){
     z=pakote;
+}
+
+void Jousipallo::reset(){
+    a=v=z=0;
 }

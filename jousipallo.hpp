@@ -19,6 +19,7 @@ public:
     virtual void paivitaSij(double t);          //paivittää sijainnin
     double getPoikkeama();                      //hakee poikkeaman
     void poikkeuta(double pakote);              //poikkeuttaa palloa
+    virtual void reset();
 protected:
     double z;                                   //poikkeama
     double a,v;                                 //kiihtyvyys ja nopeus

@@ -6,6 +6,7 @@ class VarahtelevaJousipallo:public Jousipallo{
 public:
     VarahtelevaJousipallo(double amplitudi, double kulmataajuus);
     void paivitaSij(double dt);
+    void reset();
 private:
     double t,A,w;
 };

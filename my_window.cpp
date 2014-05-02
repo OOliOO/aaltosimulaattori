@@ -17,6 +17,10 @@ void MyWindow::update(){
     SDL_UpdateTexture(screen, NULL, pixelit, w*sizeof(Uint32));
     SDL_RenderClear(renderer);
     SDL_RenderCopy(renderer, screen, NULL, NULL);
+}
+
+
+void MyWindow::display(){
     SDL_RenderPresent(renderer);
     SDL_UpdateWindowSurface(window);
 }
@@ -24,11 +28,18 @@ void MyWindow::update(){
 void MyWindow::drawPixel(Uint32 x, Uint32 y, Uint32 colour){
     if(x>=w||y>=h)
         return;
-    pixelit[y*w+x]=colour;///jooh, en tiedä miksi, mutta menee noin päin
+    pixelit[y*w+x]=colour;
 }
 
 void MyWindow::clearPixel(Uint32 x, Uint32 y){
     if(x>=w||y>=h)
         return;
     pixelit[y*w+x]=COLOUR_0;
+}
+
+void MyWindow::drawRect(const SDL_Rect* rect){
+    if(rect==0)
+        return;
+    SDL_SetRenderDrawColor(renderer,125,255,125,255);
+    SDL_RenderDrawRect(renderer,rect);
 }

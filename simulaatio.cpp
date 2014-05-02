@@ -47,6 +47,12 @@ void Simulaatio::nollaaAallot(int x0, int y0, int x1, int y1){
             nollaaAalto(i,e);
 }
 
+void Simulaatio::reset(){
+    for(auto a:palleroiset){
+        a.second->reset();
+    }
+}
+
 void Simulaatio::pause(){
     paused=!paused;
 }

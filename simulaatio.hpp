@@ -22,6 +22,7 @@ public:
     void poistaPalleroita(int y0, int x0, int y1, int x1);
     void nollaaAalto(int x, int y);
     void nollaaAallot(int y0, int x0, int y1, int x1);
+    void reset();
     const std::unordered_map<int, Jousipallo*>& getPalleroiset();
     std::stack<int>& getPoistetut();
     void update();
@@ -31,7 +32,7 @@ public:
 private:
     Uint32 t_viimeks;
     std::unordered_map<int, Jousipallo*> palleroiset;
-    //koordinaatit tunnettu clean code tyyliin yhteen inttiin ettei tartte määritellä hashia itte
+    //koordinaatit tungettu clean code tyyliin yhteen inttiin ettei tartte määritellä hashia itte
     std::stack<int> poistetut;
     bool paused;
 

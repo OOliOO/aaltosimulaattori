@@ -18,6 +18,8 @@ public:
     void update();
     void drawPixel(Uint32 x, Uint32 y, Uint32 color);
     void clearPixel(Uint32 x, Uint32 y);
+    void drawRect(const SDL_Rect* rect);
+    void display();
 private:
     Uint32 w,h;
     SDL_Window* window;

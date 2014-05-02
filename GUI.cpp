@@ -12,6 +12,8 @@ void GUI::start(){
         piirra_pallerot();
         mouse_handler.update();
         ikkuna.update();
+        ikkuna.drawRect(mouse_handler.getMouseRect());
+        ikkuna.display();
     }
 }
 
