@@ -1,7 +1,7 @@
 Aaltosimulaattori
 =================
 
-Aaltosimulaattori jonka grafiikat aiheuttavat 95% varmuudella epileptiakohtauksen 50ms altistusajalla.
+Aaltosimulaattori jonka grafiikat aiheuttavat 95% varmuudella epilepsiakohtauksen 50ms altistusajalla.
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––----------------------
 
 Ohje:
